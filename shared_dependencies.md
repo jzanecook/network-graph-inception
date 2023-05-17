@@ -1,15 +1,19 @@
-Shared Dependencies:
+1. **Scrapy**: This is a Python library used for web scraping. It is used in "reddit_scraper.py", "items.py", "pipelines.py", "settings.py", "reddit_spider.py", and all the test files.
 
-1. **Python Libraries**: Both "src/reddit_scraper.py" and "src/network_graph.py" will use the Python libraries Scrapy and Pyvis respectively. The "src/main.py" file will also need to import these libraries to run the functions from the other two files.
+2. **Pyvis**: This is a Python library for visualizing networks. It is used in "graph_generator.py" and "test_graph_generator.py".
 
-2. **Scraped Data**: The "src/reddit_scraper.py" will generate the scraped data, which will be stored in "data/scraped_data.json". This JSON file will then be used by "src/network_graph.py" to create the network graph. The "src/main.py" file will also need to access this data to coordinate the scraping and visualization processes.
+3. **Reddit Data Schema**: This is the structure of the data scraped from Reddit. It is defined in "items.py" and used in "reddit_scraper.py", "pipelines.py", "reddit_spider.py", "test_reddit_spider.py", "test_items.py", and "test_pipelines.py".
 
-3. **Functions**: The "src/reddit_scraper.py" file will contain functions for web scraping, such as `scrape_reddit()`. The "src/network_graph.py" file will contain functions for creating the network graph, such as `create_network_graph()`. These functions will be called from the "src/main.py" file.
+4. **JSON**: This is the format in which the scraped data is stored. It is used in "pipelines.py", "reddit_spider.py", and "test_pipelines.py".
 
-4. **Utils**: The "src/utils.py" file will contain utility functions that can be used by the other Python files. These might include functions for handling pagination and dynamic content, such as `handle_pagination()` and `handle_dynamic_content()`.
+5. **Pagination Handling**: This is a feature to handle the dynamic content of Reddit. It is implemented in "reddit_spider.py" and tested in "test_reddit_spider.py".
 
-5. **Data Schema**: The data schema for the scraped data will be shared between the "src/reddit_scraper.py" and "src/network_graph.py" files. This schema will define the structure of the data stored in "data/scraped_data.json".
+6. **Network Graph**: This is the visualization of the scraped data. It is created in "graph_generator.py" and tested in "test_graph_generator.py".
 
-6. **Error Messages**: Error messages, such as `ScrapingError` and `VisualizationError`, might be defined in "src/utils.py" and used across all the other Python files.
+7. **Test Cases**: These are used to verify the functionality of the code. They are defined in all the "test_" files.
 
-7. **Constants**: Constants such as the base URL for Reddit (`REDDIT_URL`) might be defined in "src/utils.py" and used in "src/reddit_scraper.py" for scraping data.
+8. **main.py**: This is the main script that runs the entire program. It uses all the other files.
+
+9. **Exported Variables**: These are the variables that are shared between different files. For example, the scraped data is exported from "reddit_spider.py" to "pipelines.py" and "graph_generator.py".
+
+10. **Function Names**: These are the names of the functions that are used in multiple files. For example, the function to scrape data from Reddit might be used in "reddit_scraper.py", "reddit_spider.py", and "test_reddit_spider.py".

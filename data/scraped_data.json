@@ -1,3 +1,0 @@
-The file "data/scraped_data.json" is a JSON file to store the scraped data. It doesn't contain any code but will be filled with data by the scraper. Initially, it can be an empty JSON object:
-
-{}
