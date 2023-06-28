@@ -15,7 +15,7 @@ You can see the initial run's results at [this link.](https://github.com/jzaneco
 - The UI involved in telling the agent what to build is good, however:
 	- It could use a more complex templating/preset scheme e.g. a search bar to "community presets" whenever you launch or a dropdown with more options.
 	- While the open-ended markdown text area is a good move for more projects, being able to specify additional options to the agent in this (Step 2 of 3) page might be worthwhile, e.g. temperature, presence, flags for the agent.
-	- Additionally, the editor itself doesn't seem to let you edit the markdown, but rather shows the text editor in the formatted view, this may hinder markdown editing especially if you're not using a template. See [[Markdown Issues]] for more on this subject.
+	- Additionally, the editor itself doesn't seem to let you edit the markdown, but rather shows the text editor in the formatted view, this may hinder markdown editing especially if you're not using a template. See [Markdown Issues](#markdown-issues) for more on this subject.
 
 ### Deployment
 
